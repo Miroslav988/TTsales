@@ -11,11 +11,16 @@
       <div class="card">
         <h2>Client details</h2>
         <div class="input-group inline">
-          <input type="text" id="first-name" placeholder="First name" />
-          <input type="text" id="last-name" placeholder="Last name" />
+          <input
+            required
+            type="text"
+            id="first-name"
+            placeholder="First name"
+          />
+          <input required type="text" id="last-name" placeholder="Last name" />
         </div>
         <div class="input-group">
-          <input type="tel" id="phone" placeholder="Phone" />
+          <input required type="tel" id="phone" placeholder="Phone" />
         </div>
         <div class="input-group">
           <input type="email" id="email" placeholder="Email (optional)" />
@@ -45,16 +50,16 @@
       <div class="card">
         <h2>Service location</h2>
         <div class="input-group">
-          <input type="text" id="address" placeholder="Address" />
+          <input required type="text" id="address" placeholder="Address" />
         </div>
         <div class="input-group">
-          <input type="text" id="city" placeholder="City" />
+          <input required type="text" id="city" placeholder="City" />
         </div>
         <div class="input-group">
-          <input type="text" id="state" placeholder="State" />
+          <input required type="text" id="state" placeholder="State" />
         </div>
         <div class="input-group inline">
-          <input type="text" id="zip-code" placeholder="Zip code" />
+          <input required type="text" id="zip-code" placeholder="Zip code" />
           <select id="area">
             <option value="" selected disabled>Select area</option>
             <option value="north">North</option>
@@ -67,13 +72,24 @@
       <div class="card">
         <h2>Scheduled</h2>
         <div class="input-group">
-          <input type="date" id="start-date" placeholder="Start date" />
+          <input
+            required
+            type="date"
+            id="start-date"
+            placeholder="Start date"
+          />
           <span class="icon icon-calendar"></span>
         </div>
         <div class="input-group inline">
-          <input type="time" id="start-time" placeholder="Start time" />
+          <input
+            required
+            type="time"
+            id="start-time"
+            placeholder="Start time"
+            intl-locale="en-US"
+          />
           <span class="icon icon-clock"></span>
-          <input type="time" id="end-time" placeholder="End time" />
+          <input required type="time" id="end-time" placeholder="End time" />
           <span class="icon icon-clock"></span>
         </div>
         <div class="input-group">
@@ -86,5 +102,10 @@
         </div>
       </div>
     </div>
+    <div class="btnContainer">
+      <button class="submit btn" type="submit">Create Job</button>
+      <button class="save btn" type="button">Save info</button>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
