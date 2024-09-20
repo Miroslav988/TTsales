@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Форма</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h2>Client details</h2>
+        <div class="input-group inline">
+          <input type="text" id="first-name" placeholder="First name" />
+          <input type="text" id="last-name" placeholder="Last name" />
+        </div>
+        <div class="input-group">
+          <input type="tel" id="phone" placeholder="Phone" />
+        </div>
+        <div class="input-group">
+          <input type="email" id="email" placeholder="Email (optional)" />
+        </div>
+      </div>
+      <div class="card">
+        <h2>Job details</h2>
+        <div class="input-group inline">
+          <select id="job-type">
+            <option value="" selected disabled>Select job type</option>
+            <option value="cleaning">Cleaning</option>
+            <option value="repair">Repair</option>
+            <option value="other">Other</option>
+          </select>
+          <select id="job-source">
+            <option value="" selected disabled>Select job source</option>
+            <option value="website">Website</option>
+            <option value="referral">Referral</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <textarea
+          id="job-description"
+          placeholder="Job description (optional)"
+        ></textarea>
+      </div>
+      <div class="card">
+        <h2>Service location</h2>
+        <div class="input-group">
+          <input type="text" id="address" placeholder="Address" />
+        </div>
+        <div class="input-group">
+          <input type="text" id="city" placeholder="City" />
+        </div>
+        <div class="input-group">
+          <input type="text" id="state" placeholder="State" />
+        </div>
+        <div class="input-group inline">
+          <input type="text" id="zip-code" placeholder="Zip code" />
+          <select id="area">
+            <option value="" selected disabled>Select area</option>
+            <option value="north">North</option>
+            <option value="south">South</option>
+            <option value="east">East</option>
+            <option value="west">West</option>
+          </select>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Scheduled</h2>
+        <div class="input-group">
+          <input type="date" id="start-date" placeholder="Start date" />
+          <span class="icon icon-calendar"></span>
+        </div>
+        <div class="input-group inline">
+          <input type="time" id="start-time" placeholder="Start time" />
+          <span class="icon icon-clock"></span>
+          <input type="time" id="end-time" placeholder="End time" />
+          <span class="icon icon-clock"></span>
+        </div>
+        <div class="input-group">
+          <select id="test-select">
+            <option value="" selected disabled>Select test</option>
+            <option value="test1">Test 1</option>
+            <option value="test2">Test 2</option>
+            <option value="test3">Test 3</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
