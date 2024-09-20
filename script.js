@@ -4,7 +4,7 @@ const URL = `https:const${CompanyDomain}.pipedrive.com/api/v1/deals?api_token=${
 console.log(URL);
 fetch(URL)
   .then((res) => res.json())
-  .then((data) => console.log(data));
+  .then((res) => console.log(res.data));
 const JobID = "8c8329b474cc42dfbc3e00ff4bcf1d5c0d81a714";
 const JobNumber = "5d4d6ed4c352075de74566c865be79658cae17e0";
 const JobComment = "d9a830e836b5b61b75bb89f973d3b1763821ccc8";
