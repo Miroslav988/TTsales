@@ -8,34 +8,52 @@
   </head>
   <body>
     <div class="container">
-      <div class="card">
+      <form name="clientDetails" class="card">
         <h2>Client details</h2>
         <div class="input-group inline">
           <input
+            name="firstName"
             required
             type="text"
             id="first-name"
             placeholder="First name"
           />
-          <input required type="text" id="last-name" placeholder="Last name" />
+          <input
+            name="lastName"
+            required
+            type="text"
+            id="last-name"
+            placeholder="Last name"
+          />
         </div>
         <div class="input-group">
-          <input required type="tel" id="phone" placeholder="Phone" />
+          <input
+            name="phone"
+            required
+            type="tel"
+            id="phone"
+            placeholder="Phone"
+          />
         </div>
         <div class="input-group">
-          <input type="email" id="email" placeholder="Email (optional)" />
+          <input
+            name="email"
+            type="email"
+            id="email"
+            placeholder="Email (optional)"
+          />
         </div>
-      </div>
-      <div class="card">
+      </form>
+      <form name="jobDetails" class="card">
         <h2>Job details</h2>
         <div class="input-group inline">
-          <select id="job-type">
+          <select name="jobType" id="job-type">
             <option value="" selected disabled>Select job type</option>
             <option value="cleaning">Cleaning</option>
             <option value="repair">Repair</option>
             <option value="other">Other</option>
           </select>
-          <select id="job-source">
+          <select name="jobSource" id="job-source">
             <option value="" selected disabled>Select job source</option>
             <option value="website">Website</option>
             <option value="referral">Referral</option>
@@ -43,24 +61,49 @@
           </select>
         </div>
         <textarea
+          name="jobDescription"
           id="job-description"
           placeholder="Job description (optional)"
         ></textarea>
-      </div>
-      <div class="card">
+      </form>
+      <form name="serviceLocation" class="card">
         <h2>Service location</h2>
         <div class="input-group">
-          <input required type="text" id="address" placeholder="Address" />
+          <input
+            name="address"
+            required
+            type="text"
+            id="address"
+            placeholder="Address"
+          />
         </div>
         <div class="input-group">
-          <input required type="text" id="city" placeholder="City" />
+          <input
+            name="city"
+            required
+            type="text"
+            id="city"
+            placeholder="City"
+          />
         </div>
         <div class="input-group">
-          <input required type="text" id="state" placeholder="State" />
+          <input
+            name="state"
+            required
+            type="text"
+            id="state"
+            placeholder="State"
+          />
         </div>
         <div class="input-group inline">
-          <input required type="text" id="zip-code" placeholder="Zip code" />
-          <select id="area">
+          <input
+            name="zipCode"
+            required
+            type="text"
+            id="zip-code"
+            placeholder="Zip code"
+          />
+          <select name="area" id="area">
             <option value="" selected disabled>Select area</option>
             <option value="north">North</option>
             <option value="south">South</option>
@@ -68,11 +111,12 @@
             <option value="west">West</option>
           </select>
         </div>
-      </div>
-      <div class="card">
+      </form>
+      <form name="scheduled" class="card">
         <h2>Scheduled</h2>
         <div class="input-group">
           <input
+            name="startDate"
             required
             type="date"
             id="start-date"
@@ -82,6 +126,7 @@
         </div>
         <div class="input-group inline">
           <input
+            name="startTime"
             required
             type="time"
             id="start-time"
@@ -89,18 +134,24 @@
             intl-locale="en-US"
           />
           <span class="icon icon-clock"></span>
-          <input required type="time" id="end-time" placeholder="End time" />
+          <input
+            name="endTime"
+            required
+            type="time"
+            id="end-time"
+            placeholder="End time"
+          />
           <span class="icon icon-clock"></span>
         </div>
         <div class="input-group">
-          <select id="test-select">
+          <select id="test-select" name="testSelect">
             <option value="" selected disabled>Select test</option>
             <option value="test1">Test 1</option>
             <option value="test2">Test 2</option>
             <option value="test3">Test 3</option>
           </select>
         </div>
-      </div>
+      </form>
     </div>
     <div class="btnContainer">
       <button class="submit btn" type="submit">Create Job</button>
