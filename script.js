@@ -1,3 +1,10 @@
+import AppExtensionsSDK from "@pipedrive/app-extensions-sdk";
+
+// Pass in id manually and provide custom UI size
+const sdk = await new AppExtensionsSDK({
+  identifier: "8d1adcaf-57d5-4d98-9a43-9c9cc615561d",
+}).initialize({ size: { height: 500 } });
+
 const APIToken = "2b94f5de8dff0aaea7c7d4c3c4b7ee085d75f46d";
 const CompanyDomain = "prikolistiiko-sandbox";
 const Url = `https://${CompanyDomain}.pipedrive.com/api/v1/deals?api_token=${APIToken}`;
